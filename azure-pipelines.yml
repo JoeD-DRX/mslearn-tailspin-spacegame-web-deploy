@@ -78,8 +78,8 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-      vmImage: 'ubuntu-20.04'
-    environment: dev
+      vmImage: 'windows-Latest'
+    environment: devLocal
     variables:
     - group: Release
     strategy:
