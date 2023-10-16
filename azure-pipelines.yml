@@ -79,7 +79,9 @@ stages:
   - deployment: Deploy
     pool:
       vmImage: 'windows-Latest'
-    environment: devLocal
+    environment: 
+      name: devLocal
+      resourceType: VirtualMachine
     variables:
     - group: Release
     strategy:
