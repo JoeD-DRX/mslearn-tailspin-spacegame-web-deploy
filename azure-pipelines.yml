@@ -76,7 +76,7 @@ stages:
       eq(variables['Build.SourceBranchName'], variables['releaseBranchName'])
     )
   jobs:
-  - deployment: Deploy
+  - deployment: Deployment
     pool:
       vmImage: 'windows-Latest'
     environment: 
